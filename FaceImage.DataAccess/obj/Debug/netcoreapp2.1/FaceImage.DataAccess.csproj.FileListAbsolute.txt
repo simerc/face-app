@@ -1,0 +1,12 @@
+c:\projects\FaceImageMobileApp\FaceImage.DataAccess\bin\Debug\netcoreapp2.1\FaceImage.DataAccess.deps.json
+c:\projects\FaceImageMobileApp\FaceImage.DataAccess\bin\Debug\netcoreapp2.1\FaceImage.DataAccess.dll
+c:\projects\FaceImageMobileApp\FaceImage.DataAccess\bin\Debug\netcoreapp2.1\FaceImage.DataAccess.pdb
+c:\projects\FaceImageMobileApp\FaceImage.DataAccess\obj\Debug\netcoreapp2.1\FaceImage.DataAccess.csprojAssemblyReference.cache
+c:\projects\FaceImageMobileApp\FaceImage.DataAccess\obj\Debug\netcoreapp2.1\FaceImage.DataAccess.csproj.CoreCompileInputs.cache
+c:\projects\FaceImageMobileApp\FaceImage.DataAccess\obj\Debug\netcoreapp2.1\FaceImage.DataAccess.AssemblyInfoInputs.cache
+c:\projects\FaceImageMobileApp\FaceImage.DataAccess\obj\Debug\netcoreapp2.1\FaceImage.DataAccess.AssemblyInfo.cs
+c:\projects\FaceImageMobileApp\FaceImage.DataAccess\obj\Debug\netcoreapp2.1\FaceImage.DataAccess.dll
+c:\projects\FaceImageMobileApp\FaceImage.DataAccess\obj\Debug\netcoreapp2.1\FaceImage.DataAccess.pdb
+c:\projects\FaceImageMobileApp\FaceImage.DataAccess\bin\Debug\netcoreapp2.1\FaceImage.Entities.dll
+c:\projects\FaceImageMobileApp\FaceImage.DataAccess\bin\Debug\netcoreapp2.1\FaceImage.Entities.pdb
+c:\projects\FaceImageMobileApp\FaceImage.DataAccess\obj\Debug\netcoreapp2.1\FaceImage.DataAccess.csproj.CopyComplete

@@ -1,0 +1,17 @@
+{
+    "Images": 
+    [
+        {
+            "id": "1",
+            "name": "Image here",
+            "alt": "Image 1 alt info",
+            "src": "https://loremflickr.com/150/150/dog"
+        },
+        {
+            "id": "2",
+            "name": "Another image",
+            "alt": "image of parise",
+            "src": "https://loremflickr.com/150/150/paris"
+        }
+    ]
+}
