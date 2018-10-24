@@ -2,30 +2,23 @@
   <div class="row">
       <form>
           <div class="form-group">
-            <label for="firstName">First Name</label>
-            <input type="text" class="form-control" id="firstName" 
-                  aria-describedby="firstNameHelp" placeholder="Enter first name">
-                <!-- <small id="emailHelp" class="form-text text-muted">
-                  We'll never share your email with anyone else.
-                </small> -->
+            <label data-error="error message here....." for="firstName">First Name</label>
+            <input type="text" class="form-control validate" id="firstName" 
+                  name="firstName" #Firstname="ngModel" [(ngModel)]="registerModel.FirstName" required />
           </div>
         
           <div class="form-group">
             <label for="lastName">Last Name</label>
-            <input type="text" class="form-control" id="firstName" 
-                  aria-describedby="lastNameHelp" placeholder="Enter last name">
-                <!-- <small id="emailHelp" class="form-text text-muted">
-                  We'll never share your email with anyone else.
-                </small> -->
+            <input type="text" class="form-control validate" id="firstName" 
+                    name="lastName" #LastName="ngModel" [(ngModel)]="registerModel.LastName" required />
+    
           </div>
         
           <div class="form-group">
             <label for="email">Email address</label>
-            <input type="email" class="form-control" id="email" 
-                  aria-describedby="emailHelp" placeholder="Enter email address">
-                <!-- <small id="emailHelp" class="form-text text-muted">
-                  We'll never share your email with anyone else.
-                </small> -->
+            <input type="email" class="form-control validate" id="email" 
+                    name="email" #Email="ngModel" [(ngModel)]="registerModel.Email" 
+                    [pattern]="emailPattern" required /> 
           </div>
           <button type="submit" class="btn btn-primary">Register</button>
         </form>

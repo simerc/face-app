@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { FormsModule } from '@angular/forms';
 
 import { AppComponent } from './app.component';
 import { ImageListComponent } from './image-list/image-list.component';
@@ -24,7 +25,8 @@ import { UiModule } from './ui/ui.module';
     BrowserModule,
     HttpClientModule,
     AppRoutingModule,
-    UiModule
+    UiModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
