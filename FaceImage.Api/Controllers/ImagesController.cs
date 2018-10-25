@@ -3,6 +3,8 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using FaceImage.Api.Models.Images;
+using Microsoft.AspNetCore.Authorization;
+using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,6 +20,7 @@ namespace FaceImage.Api.Controllers
         }
 
         [HttpGet]
+        [EnableCors("AllowAll")]
         public ActionResult<IEnumerable<ImageModel>> Get()
         {
             var imageList = new List<ImageModel>()

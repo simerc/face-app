@@ -6,7 +6,8 @@ export const environment = {
   production: false,
 
   //env variables
-  apiUrl: "http://localhost:3000/api/"
+  //apiUrl: "http://localhost:3000/api/"
+  apiUrl: "http://faceapp.api.local"
 };
 
 /*

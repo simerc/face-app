@@ -9,7 +9,6 @@ namespace FaceImage.Api.Models.Registration
     public class RegisterViewModel
     {
         [Required]
-        [DataType(DataType.EmailAddress, ErrorMessage = "Email address required")]
         public string Email { get; set; }
 
         //[Required]

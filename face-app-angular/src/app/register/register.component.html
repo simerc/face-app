@@ -1,10 +1,23 @@
 <div class="container">
-  <div class="row">
-      <form>
+  <div class="row" *ngIf="userExists">
+    <p class="text-danger">
+      User already exists, please try another email
+    </p>
+  </div>
+  
+  <div class="row" *ngIf="successfulRegistration">
+    <p>
+      Thank you for registering, please login<br /><br />
+      <a routerLink="/login">Login</a>
+    </p>
+  </div>
+
+  <div class="row" *ngIf="!successfulRegistration">
+      <form (ngSubmit)="onSubmit(registerForm)" #registerForm="ngForm">
           <div class="form-group">
             <label data-error="error message here....." for="firstName">First Name</label>
             <input type="text" class="form-control validate" id="firstName" 
-                  name="firstName" #Firstname="ngModel" [(ngModel)]="registerModel.FirstName" required />
+                  name="firstName" #FirstName="ngModel" [(ngModel)]="registerModel.FirstName" required />
           </div>
         
           <div class="form-group">
@@ -20,8 +33,11 @@
                     name="email" #Email="ngModel" [(ngModel)]="registerModel.Email" 
                     [pattern]="emailPattern" required /> 
           </div>
-          <button type="submit" class="btn btn-primary">Register</button>
+          <button type="submit" class="btn btn-primary" [disabled]="!registerForm.valid">Register</button>
         </form>
+        <!-- <div *ngIf="FirstName.invalid">
+            <p>error</p>
+        </div> -->
   </div>
     
 </div>

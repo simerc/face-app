@@ -4,6 +4,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using FaceImage.Api.Models.Registration;
 using FaceImage.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.AspNetCore.Mvc;
@@ -17,13 +18,11 @@ namespace FaceImage.Api.Controllers
     {
         private readonly SignInManager<AppUser> _signInManager;
         private readonly UserManager<AppUser> _userManager;
-        //private readonly UserStore<AppUser> _userStore;
 
         public AccountController(SignInManager<AppUser> signInManager, UserManager<AppUser> userManager)
         {
             _signInManager = signInManager;
             _userManager = userManager;
-            //_userStore = userStore;
         }
 
         //public async Task<IActionResult> Login()
@@ -38,9 +37,21 @@ namespace FaceImage.Api.Controllers
         }
 
         [HttpPost]
+        [Route("delete/{id}")]
+        public async Task<IActionResult> Delete(string id)
+        {
+            var user = await this._userManager.FindByIdAsync(id);
+
+            var result = await this._userManager.DeleteAsync(user);
+
+            return Ok();
+        }
+
+        [HttpPost]
         [Route("register")]
         public async Task<IActionResult> Register([FromBody] RegisterViewModel model)
         {
+
             if (!ModelState.IsValid)
             {
                 return BadRequest();
@@ -70,6 +81,14 @@ namespace FaceImage.Api.Controllers
             }
 
             return BadRequest();
+        }
+
+        [HttpGet]
+        [Route("protected")]
+        [Authorize(Policy = "ApiUser")]
+        public IActionResult Protected()
+        {
+            return Ok();
         }
     }
 }

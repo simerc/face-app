@@ -12,6 +12,9 @@ import { ImageDetailsComponent } from './image-details/image-details.component';
 
 import { AppRoutingModule } from './app-routing/app-routing.module';
 import { UiModule } from './ui/ui.module';
+import { LoginComponent } from './components/login/login.component';
+
+import { AuthGuard } from './guards/auth-gard.service';
 
 
 @NgModule({
@@ -19,7 +22,8 @@ import { UiModule } from './ui/ui.module';
     AppComponent,
     ImageListComponent,
     ImageDetailsComponent,
-    RegisterComponent
+    RegisterComponent,
+    LoginComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +32,7 @@ import { UiModule } from './ui/ui.module';
     UiModule,
     FormsModule
   ],
-  providers: [],
+  providers: [AuthGuard],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
