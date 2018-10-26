@@ -5,9 +5,9 @@ VisualStudioVersion = 15.0.28010.2026
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaceImage.Api", "FaceImage.Api\FaceImage.Api.csproj", "{55020F33-C8E9-4853-84B7-EE7A3CEA9CD3}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceImage.DataAccess", "FaceImage.DataAccess\FaceImage.DataAccess.csproj", "{34DBD439-4E07-4E63-945A-431D5443E3EA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaceImage.DataAccess", "FaceImage.DataAccess\FaceImage.DataAccess.csproj", "{34DBD439-4E07-4E63-945A-431D5443E3EA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "FaceImage.Entities", "FaceImage.Entities\FaceImage.Entities.csproj", "{243C90FA-BB42-4F2A-BD52-9343D234B9F2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "FaceImage.Entities", "FaceImage.Entities\FaceImage.Entities.csproj", "{243C90FA-BB42-4F2A-BD52-9343D234B9F2}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

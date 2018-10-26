@@ -1,6 +1,9 @@
 ﻿using AutoMapper;
 using FaceImage.Api.Infrastructure.Automapper;
+using FaceImage.Api.Infrastructure.StartupExtensions;
 using FaceImage.Api.Security;
+using FaceImage.Api.Services;
+using FaceImage.Api.Services.Interfaces;
 using FaceImage.DataAccess;
 using FaceImage.Entities;
 using FluentValidation.AspNetCore;
@@ -35,8 +38,9 @@ namespace FaceImage.Api
                 .AddEntityFrameworkStores<UserDbContext>()
                 .AddDefaultTokenProviders();
 
-
+            //setup services / factories
             services.AddSingleton<IJwtFactory, JwtFactory>();
+            services.AddSingleton<IImageStorageService, LocalImageStorageService>();
 
             services.AddJwtAuthentication(Configuration);
 
@@ -71,6 +75,9 @@ namespace FaceImage.Api
 
             //Automapper profiles
             var mappingConfig = new MapperConfiguration(mc => { mc.AddProfile(new MappingProfile()); });
+
+            //setup image storage based on settings
+            services.ConfigureImageUploadOptions(Configuration);
 
         }
 

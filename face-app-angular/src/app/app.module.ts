@@ -15,6 +15,7 @@ import { UiModule } from './ui/ui.module';
 import { LoginComponent } from './components/login/login.component';
 
 import { AuthGuard } from './guards/auth-gard.service';
+import { ImageUploadComponent } from './image-upload/image-upload.component';
 
 
 @NgModule({
@@ -23,7 +24,8 @@ import { AuthGuard } from './guards/auth-gard.service';
     ImageListComponent,
     ImageDetailsComponent,
     RegisterComponent,
-    LoginComponent
+    LoginComponent,
+    ImageUploadComponent
   ],
   imports: [
     BrowserModule,

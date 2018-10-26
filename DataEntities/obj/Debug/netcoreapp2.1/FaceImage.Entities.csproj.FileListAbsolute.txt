@@ -1,9 +1,0 @@
-c:\projects\FaceImageMobileApp\DataEntities\bin\Debug\netcoreapp2.1\FaceImage.Entities.deps.json
-c:\projects\FaceImageMobileApp\DataEntities\bin\Debug\netcoreapp2.1\FaceImage.Entities.dll
-c:\projects\FaceImageMobileApp\DataEntities\bin\Debug\netcoreapp2.1\FaceImage.Entities.pdb
-c:\projects\FaceImageMobileApp\DataEntities\obj\Debug\netcoreapp2.1\FaceImage.Entities.csprojAssemblyReference.cache
-c:\projects\FaceImageMobileApp\DataEntities\obj\Debug\netcoreapp2.1\FaceImage.Entities.csproj.CoreCompileInputs.cache
-c:\projects\FaceImageMobileApp\DataEntities\obj\Debug\netcoreapp2.1\FaceImage.Entities.AssemblyInfoInputs.cache
-c:\projects\FaceImageMobileApp\DataEntities\obj\Debug\netcoreapp2.1\FaceImage.Entities.AssemblyInfo.cs
-c:\projects\FaceImageMobileApp\DataEntities\obj\Debug\netcoreapp2.1\FaceImage.Entities.dll
-c:\projects\FaceImageMobileApp\DataEntities\obj\Debug\netcoreapp2.1\FaceImage.Entities.pdb

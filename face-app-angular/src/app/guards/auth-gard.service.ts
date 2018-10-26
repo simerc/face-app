@@ -12,6 +12,10 @@ export class AuthGuard implements CanActivate {
   canActivate() {
     var token = localStorage.getItem("jwt");
 
+    console.log("AuthGuard - token " + token);
+
+    console.log("expired " + helper.isTokenExpired(token));
+
     if (token && !helper.isTokenExpired(token)){
       console.log(helper.decodeToken(token));
       return true;

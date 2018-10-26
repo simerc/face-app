@@ -8,12 +8,13 @@ import { ImageListComponent } from '../image-list/image-list.component';
 import { ImageDetailsComponent } from '../image-details/image-details.component';
 import { RegisterComponent } from '../register/register.component';
 import { LoginComponent } from '../components/login/login.component';
+import { ImageUploadComponent } from '../image-upload/image-upload.component';
 
 const appRoutes: Routes = [
   {
     path: "images",
-    component: ImageListComponent
-    //canActivate: [AuthGuard]
+    component: ImageListComponent,
+    canActivate: [AuthGuard]
   },
   {
     path: "images/:id",
@@ -27,7 +28,13 @@ const appRoutes: Routes = [
   {
     path: "login",
     component: LoginComponent
+  },
+  {
+    path: "upload-image",
+    component: ImageUploadComponent
   }
+
+
 ];
 
 export const routingModule: ModuleWithProviders = RouterModule.forRoot(appRoutes);

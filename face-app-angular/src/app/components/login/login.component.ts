@@ -23,6 +23,7 @@ export class LoginComponent {
         let token = (<any>response).auth_token;
         localStorage.setItem("jwt", token);
 
+        console.log("logged in, redirecting");
         this.invalidLogin = false;
         this.router.navigate(["/images"]);
       }, 
